@@ -16,4 +16,20 @@ public class FlatVector
     {
         return new FlatVector(a.X + b.X, a.Y + b.Y);    
     }
+
+    public static FlatVector operator - (FlatVector a, FlatVector b)
+    {
+        return new FlatVector(a.X - b.X, a.Y - b.Y);    
+    }
+
+    public static FlatVector operator - (FlatVector a)
+    {
+        return new FlatVector(-a.X, -a.Y);
+    }
+
+    public static FlatVector operator * (FlatVector a, float s)
+    {
+        return new FlatVector(a.X * s, a.Y * s);
+    }
+
 }
